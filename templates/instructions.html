@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Movie Recommender</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <script type="text/javascript">
+        
+
+    </script>
+    <script src="{{url_for('static', filename='js/script.js')}}" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div class="container" >
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #494949;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="/">Movie Recommender</a>
+                
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/instructions">Instructions</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/algorithm">Algorithm</a>
+                    </li>
+                </ul>
+    
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    To recieve movie recommendations the first thing you need to do is add a movie to the list of movies they enjoyed. To do this, start typing a movie you enjoyed on the textbar and then the movie you where searching for should come up on the drop down menu. Click on the movie and then click add. If your movie does not show up, you will not be able to add that movie to the list. Keep adding movies until you have added all the movies you have enjoyed recently. 
+                </p>
+
+                <image src="{{url_for('static',filename = 'images/select_movie.png')}}" width="400" 
+     height="500">
+
+                <p>
+                    If you want to remove an item from the list of movies you enjoyed, click on the 'X' next to the title.   
+                </p>
+
+                <p>
+                    Once you added all the movies you enjoyed click submit and you will recieve a list of movie recommendations.
+                </p>
+
+                
+            </div>
+
+        </div>  
+
+
+</body>
+
+</html>

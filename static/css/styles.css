@@ -1,0 +1,29 @@
+.navbar {
+  margin-bottom: 20px;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+.favorite-movies {
+	background-color: white;
+	height: 400px; 
+	/*max-width: 250px;*/
+	margin-left: 18px;
+	border-style: solid;
+	overflow: auto;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    font-family: "Courier";
+}​
+
+.btn-group-xs > .btn, .btn-xs {
+    padding: .25rem .4rem;
+    font-size: .875rem;
+    line-height: .5;
+    border-radius: .2rem;
+}
